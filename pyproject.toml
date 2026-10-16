@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcvk-2026"
+version = "0.1.0"
+description = "Praktikum Pengolahan Citra dan Visi Komputer (PCVK) 2026"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "matplotlib>=3.7.0",
+    "pillow>=10.0.0",
+    "scikit-image>=0.21.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.3.0",
+    "pytesseract>=0.3.10",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "ipykernel>=6.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4.0.0",
+    "notebook>=7.0.0",
+    "ipywidgets>=8.1.0",
+]
+
+[tool.setuptools]
+packages = []
